@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true,
+    "node": true
+  },
+  //   "settings": {
+  //     "react": {
+  //       "version": "detect"
+  //     }
+  //   },
+  "ignorePatterns": ["vite.config*"],
+  "extends": [
+    // "eslint:recommended",
+    // "plugin:@typescript-eslint/eslint-recommended",
+    "wesbos/typescript",
+    // "airbnb",
+    // "airbnb-typescript",
+    // "airbnb/hooks",
+    // "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "tailwindcss",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error"
+      //   {
+      //     "semi": true
+      //   }
+    ],
+    "tailwindcss/classnames-order": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-contradicting-classname": "error"
+  }
+}
