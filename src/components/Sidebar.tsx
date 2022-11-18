@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { SiShopware } from 'react-icons/si';
-import { Si3M } from 'react-icons/si';
+import { SiShopware, Si3M } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
